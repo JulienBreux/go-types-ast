@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+var bar string
+
+func main() {
+	if bar == "" {
+		bar = "Hello"
+	}
+
+	fmt.Println(bar)
+}
