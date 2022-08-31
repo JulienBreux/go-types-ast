@@ -1,19 +1,8 @@
 //go:build exclude
 
-package main
-
-import "fmt"
+package example
 
 var x int
-
-func main() {
-	if x == 0 {
-		x = 123
-	}
-
-	fmt.Printf("%d\n", x)
-
-}
 
 func _() {
 	x := x

@@ -12,7 +12,7 @@ func TestRenameVariable(t *testing.T) {
 		t.Errorf("got no error, wanted %q", err)
 	}
 
-	want, _ := ioutil.ReadFile("files/to.go") // TODO: Check err
+	want, _ := ioutil.ReadFile("files/to.go")
 	if !bytes.Equal(got, want) {
 		t.Errorf("got:\n%s\nwanted:\n%s\n", got, want)
 	}
