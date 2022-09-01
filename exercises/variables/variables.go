@@ -12,7 +12,7 @@ import (
 func RenameVariable(filename, oldVar, newVar string) ([]byte, error) {
 	// Parse file into new file set
 	fset := token.NewFileSet()
-	f, err := parser.ParseFile(fset, filename, nil, 0)
+	f, err := parser.ParseFile(fset, filename, nil, parser.ParseComments)
 	if err != nil {
 		return nil, err
 	}
